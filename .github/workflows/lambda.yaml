@@ -3,9 +3,9 @@ name: Deploy AWS Lambda
 on: # defines when our workflow is gonna run
   push: #triggers our workflow on push events
     branches:
-      - main:
+      - main
     paths: 
-        - 'lambda/'
+      - 'lambda/**'
 
 jobs:
   deploy-lambda:  #name of our job
