@@ -1,4 +1,4 @@
-name: Deploy AWS Lambda
+name: Deploy AWS Lambda Now
 
 on: # defines when our workflow is gonna run
   push: #triggers our workflow on push events
@@ -35,4 +35,4 @@ jobs:
         cd lambda
         zip -r lambda.zip .
         aws lambda update-function-code --function-name Test-Lambda --zip-file fileb://lambda.zip
-        
+
